@@ -1,0 +1,20 @@
+version : '2'
+services:
+ mongodb:
+   image: mongo:3.2-jessie
+   ports:
+     - "27017:27017"
+   container_name: moviemongo
+   network_mode: host
+ Spring:
+   image: docker-spring
+   build: movie-service/
+   restart: always
+   network_mode: host
+   container_name: movieapp
+   depends_on: 
+     - mongodb
+   ports:
+     - 8080:8080
+   expose:
+     - 8080

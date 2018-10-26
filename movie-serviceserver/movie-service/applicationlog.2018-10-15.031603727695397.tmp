@@ -1,0 +1,41 @@
+2018-10-15 15:02:33.785 ERROR 20764 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514) [na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [na:na]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-10-15 15:03:04.024  INFO 20764 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - Re-registering apps/APP
+2018-10-15 15:03:04.024  INFO 20764 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:03:04.326  INFO 20764 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:03:34.126  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-15 15:03:34.127  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-15 15:03:34.128  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-15 15:03:34.128  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-15 15:03:34.128  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-15 15:03:34.128  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2018-10-15 15:03:34.129  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-15 15:03:34.138  INFO 20764 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-15 15:05:33.444  INFO 20764 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 15:06:32.546  INFO 20764 --- [Thread-7] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74f7d1d2: startup date [Mon Oct 15 15:00:24 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@19e7a160
+2018-10-15 15:06:32.549  INFO 20764 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application app with eureka with status DOWN
+2018-10-15 15:06:32.549  WARN 20764 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539596192549, current=DOWN, previous=UP]
+2018-10-15 15:06:32.550  INFO 20764 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:06:32.553  INFO 20764 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-15 15:06:32.555  INFO 20764 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-15 15:06:32.561  INFO 20764 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-15 15:06:32.562  INFO 20764 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-15 15:06:32.572  INFO 20764 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:06:32.581  INFO 20764 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-10-15 15:06:32.587  WARN 20764 --- [Thread-7] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-10-15 15:06:38.994  INFO 21354 --- [main] c.m.m.MovieServiceApplication            : No active profile set, falling back to default profiles: default
+2018-10-15 15:06:39.015  INFO 21354 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ca17ab0: startup date [Mon Oct 15 15:06:39 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@45a4b042

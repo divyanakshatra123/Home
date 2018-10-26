@@ -1,0 +1,38 @@
+2018-10-15 15:06:48.305  INFO 21354 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-10-15 15:06:48.338  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-15 15:06:48.594  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-15 15:06:48.598  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-10-15 15:06:48.602  INFO 21354 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-15 15:06:48.609  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1539596208607 with initial instances count: 1
+2018-10-15 15:06:48.614  INFO 21354 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application app with eureka with status UP
+2018-10-15 15:06:48.614  INFO 21354 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539596208614, current=UP, previous=STARTING]
+2018-10-15 15:06:48.623  INFO 21354 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-15 15:06:48.624  INFO 21354 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-10-15 15:06:48.629  INFO 21354 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:06:48.667  INFO 21354 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-10-15 15:06:48.681  INFO 21354 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:06:48.736  INFO 21354 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-10-15 15:06:48.975  INFO 21354 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-10-15 15:06:49.071  INFO 21354 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2018-10-15 15:06:49.074  INFO 21354 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2018-10-15 15:06:49.080  INFO 21354 --- [main] c.m.m.MovieServiceApplication            : Started MovieServiceApplication in 14.325 seconds (JVM running for 15.278)
+2018-10-15 15:11:48.341  INFO 21354 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 15:14:03.172  INFO 21354 --- [Thread-7] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ca17ab0: startup date [Mon Oct 15 15:06:39 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@45a4b042
+2018-10-15 15:14:03.174  INFO 21354 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application app with eureka with status DOWN
+2018-10-15 15:14:03.174  WARN 21354 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539596643174, current=DOWN, previous=UP]
+2018-10-15 15:14:03.176  INFO 21354 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:14:03.179  INFO 21354 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-15 15:14:03.180  INFO 21354 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-15 15:14:03.184  INFO 21354 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-15 15:14:03.185  INFO 21354 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:14:03.190  INFO 21354 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-15 15:14:03.208  INFO 21354 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-10-15 15:14:03.214  WARN 21354 --- [Thread-7] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-10-15 15:14:09.566  INFO 21707 --- [main] c.m.m.MovieServiceApplication            : No active profile set, falling back to default profiles: default
+2018-10-15 15:14:09.587  INFO 21707 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37fbe4a8: startup date [Mon Oct 15 15:14:09 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3406472c

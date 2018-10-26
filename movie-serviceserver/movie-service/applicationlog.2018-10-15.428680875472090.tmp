@@ -1,0 +1,35 @@
+2018-10-15 13:27:58.295  INFO 17693 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-10-15 13:27:58.296  INFO 17693 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-10-15 13:27:58.567  INFO 17693 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:27:58.605  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-15 13:27:58.605  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-15 13:27:58.605  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-15 13:27:58.605  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-15 13:27:58.606  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-15 13:27:58.606  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-10-15 13:27:58.606  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-15 13:27:58.803  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-15 13:27:58.806  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-10-15 13:27:58.812  INFO 17693 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-15 13:27:58.819  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1539590278817 with initial instances count: 2
+2018-10-15 13:27:58.823  INFO 17693 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application application with eureka with status UP
+2018-10-15 13:27:58.824  INFO 17693 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539590278824, current=UP, previous=STARTING]
+2018-10-15 13:27:58.834  INFO 17693 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-15 13:27:58.835  INFO 17693 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-10-15 13:27:58.834  INFO 17693 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPLICATION/172.23.239.97:application:8081: registering service...
+2018-10-15 13:27:58.894  INFO 17693 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPLICATION/172.23.239.97:application:8081 - registration status: 204
+2018-10-15 13:27:58.899  INFO 17693 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-10-15 13:27:58.948  INFO 17693 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-10-15 13:27:59.203  INFO 17693 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-10-15 13:27:59.296  INFO 17693 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2018-10-15 13:27:59.299  INFO 17693 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2018-10-15 13:27:59.306  INFO 17693 --- [main] c.m.m.MovieServiceApplication            : Started MovieServiceApplication in 14.221 seconds (JVM running for 15.225)
+2018-10-15 13:32:58.609  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:37:58.610  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:42:58.611  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:47:58.612  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:52:58.614  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 13:57:58.615  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 14:02:58.616  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 14:07:58.617  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 14:12:58.618  INFO 17693 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

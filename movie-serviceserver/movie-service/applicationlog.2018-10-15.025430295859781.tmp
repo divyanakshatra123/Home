@@ -1,0 +1,44 @@
+2018-10-15 13:22:17.906  WARN 17130 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@10.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@10.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@10.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2075)
+ java.base@10.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1121)
+ java.base@10.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@10.0.2/java.lang.Thread.run(Thread.java:844)
+2018-10-15 13:22:17.954  INFO 17130 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-15 13:22:17.957 ERROR 17130 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9090, or configure this application to listen on another port.
+
+2018-10-15 13:22:17.958  INFO 17130 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2db2dd9d: startup date [Mon Oct 15 13:22:06 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6aa61224
+2018-10-15 13:22:17.960  INFO 17130 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application application with eureka with status DOWN
+2018-10-15 13:22:17.960  WARN 17130 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539589937960, current=DOWN, previous=UP]
+2018-10-15 13:22:17.961  INFO 17130 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPLICATION/172.23.239.97:application:9090: registering service...
+2018-10-15 13:22:17.978  INFO 17130 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APPLICATION/172.23.239.97:application:9090 - registration status: 204
+2018-10-15 13:22:17.972  INFO 17130 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-15 13:22:17.981  INFO 17130 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-15 13:22:17.992  INFO 17130 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-15 13:22:17.993  INFO 17130 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-15 13:22:18.047  INFO 17130 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-10-15 13:22:18.055  WARN 17130 --- [main] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-10-15 13:23:44.528  INFO 17398 --- [main] c.m.m.MovieServiceApplication            : No active profile set, falling back to default profiles: default
+2018-10-15 13:23:44.557  INFO 17398 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1051817b: startup date [Mon Oct 15 13:23:44 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@327af41b
+2018-10-15 13:23:47.215  INFO 17398 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aec7f67f-e1ff-3079-b3aa-97f35058831b
+2018-10-15 13:23:47.252  INFO 17398 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-15 13:23:47.414  INFO 17398 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$dcad00e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-15 13:23:47.443  INFO 17398 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7946b6b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-15 13:23:48.005  INFO 17398 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)

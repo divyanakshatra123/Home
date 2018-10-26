@@ -1,0 +1,29 @@
+2018-10-15 15:16:49.115  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-15 15:16:49.117  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-15 15:16:49.117  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-15 15:16:49.117  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-15 15:16:49.117  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-15 15:16:49.118  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2018-10-15 15:16:49.118  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-15 15:16:49.301  INFO 21707 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - Re-registering apps/APP
+2018-10-15 15:16:49.302  INFO 21707 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:16:49.301  INFO 21707 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-15 15:16:49.461  INFO 21707 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:17:04.928  INFO 21707 --- [Thread-7] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37fbe4a8: startup date [Mon Oct 15 15:14:09 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3406472c
+2018-10-15 15:17:04.930  INFO 21707 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application app with eureka with status DOWN
+2018-10-15 15:17:04.931  WARN 21707 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539596824931, current=DOWN, previous=UP]
+2018-10-15 15:17:04.931  INFO 21707 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 15:17:04.935  INFO 21707 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-15 15:17:04.945  INFO 21707 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 15:17:04.946  INFO 21707 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-15 15:17:04.950  INFO 21707 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-15 15:17:04.953  INFO 21707 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-15 15:17:04.972  INFO 21707 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-10-15 15:17:04.981  WARN 21707 --- [Thread-7] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-10-15 15:17:14.911  INFO 22334 --- [main] c.m.m.MovieServiceApplication            : No active profile set, falling back to default profiles: default
+2018-10-15 15:17:14.932  INFO 22334 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c5d601e: startup date [Mon Oct 15 15:17:14 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5117dd67
+2018-10-15 15:17:17.726  INFO 22334 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aec7f67f-e1ff-3079-b3aa-97f35058831b
+2018-10-15 15:17:17.760  INFO 22334 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-10-15 15:17:17.939  INFO 22334 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$f15d6f60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-15 15:17:17.964  INFO 22334 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8df7252b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-15 15:17:18.559  INFO 22334 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)

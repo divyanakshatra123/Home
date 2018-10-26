@@ -1,0 +1,35 @@
+2018-10-15 14:45:06.673  INFO 19959 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-10-15 14:45:06.674  INFO 19959 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-10-15 14:45:06.931  INFO 19959 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-10-15 14:45:06.964  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-10-15 14:45:06.964  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-10-15 14:45:06.965  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-10-15 14:45:06.965  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-10-15 14:45:06.965  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-10-15 14:45:06.965  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-10-15 14:45:06.965  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-10-15 14:45:07.152  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-10-15 14:45:07.155  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-10-15 14:45:07.166  INFO 19959 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-10-15 14:45:07.172  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1539594907170 with initial instances count: 1
+2018-10-15 14:45:07.178  INFO 19959 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application app with eureka with status UP
+2018-10-15 14:45:07.179  INFO 19959 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539594907179, current=UP, previous=STARTING]
+2018-10-15 14:45:07.181  INFO 19959 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 14:45:07.187  INFO 19959 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-15 14:45:07.187  INFO 19959 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-10-15 14:45:07.229  INFO 19959 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-10-15 14:45:07.244  INFO 19959 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 14:45:07.285  INFO 19959 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-10-15 14:45:07.563  INFO 19959 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2018-10-15 14:45:07.664  INFO 19959 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2018-10-15 14:45:07.667  INFO 19959 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2018-10-15 14:45:07.672  INFO 19959 --- [main] c.m.m.MovieServiceApplication            : Started MovieServiceApplication in 15.749 seconds (JVM running for 16.692)
+2018-10-15 14:48:20.364  INFO 19959 --- [Thread-7] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@16afbd92: startup date [Mon Oct 15 14:44:57 IST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5e403b4a
+2018-10-15 14:48:20.366  INFO 19959 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application app with eureka with status DOWN
+2018-10-15 14:48:20.367  WARN 19959 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1539595100367, current=DOWN, previous=UP]
+2018-10-15 14:48:20.367  INFO 19959 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081: registering service...
+2018-10-15 14:48:20.374  INFO 19959 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APP/172.23.239.97:app:8081 - registration status: 204
+2018-10-15 14:48:20.376  INFO 19959 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-15 14:48:20.377  INFO 19959 --- [Thread-7] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-10-15 14:48:20.385  INFO 19959 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-15 14:48:20.386  INFO 19959 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
